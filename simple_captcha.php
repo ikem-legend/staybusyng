@@ -16,7 +16,6 @@ session_start();
 			$count = $count+1;
 			// echo "string".$count;
 			$_SESSION['attempt'] = $count;
-			// die();
 			// $_SESSION["attempt"] = $count;
 			if ($_SESSION["attempt"] == 5) {
 				echo "string";
