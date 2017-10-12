@@ -5,7 +5,7 @@ session_start();
 	if (isset($_POST) & !empty($_POST)){
 		if ($_POST['captcha'] == $_SESSION['code']){
 			echo "<p class=\"alert-success text-center\"> Correct captcha</p>";
-			header('Location: success.html');
+			header('Location: success.php');
 		} else {
 			echo "<p class=\"alert-danger text-center\">Invalid captcha</p>";
 			if ($_SESSION['attempt'] == 0) {
